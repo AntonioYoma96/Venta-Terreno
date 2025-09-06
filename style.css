@@ -67,11 +67,11 @@ img{
 }
 
 .local2 {
-  background-image: url(images/campo/49.JPG);
+  background-image: url(images/campo/9.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 500px;
-  background-position: center 60%;
+  background-position: center 50%;
 }
 
 .four.jumbotron{
@@ -165,7 +165,7 @@ padding: 0!important
 }
 
 .how {
-  background-image: url(images/19.jpeg);
+  background-image: url(images/campo/rio_gif.gif);
   background-position: center;
   min-height: 400px;
   background-repeat: no-repeat;

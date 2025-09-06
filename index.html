@@ -128,7 +128,7 @@
               </div>
           </div>
           <div class="col-12 col-md-12 col-lg-3">
-              <img src="images/campo/21.JPG">
+              <img src="images/campo/rio2_gif.PNG" height="291px">
               <div class="container w3-flat-nephritis">
                 <br>
                   <h4 class="text-center text-uppercase"><small>Ríos</small></h4>
@@ -411,20 +411,26 @@
       </div>
 
      <div class="six"><br><br>
-       <h3 class="text-white text-center">Ready to rent the house?</h3><br><br>
-        <p class="text-white text-center">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-      <div class="row">
-        <div class="col-12 container jumbotron">
-          <form class="form-inline" action="send_form_email.php">
-        <label for="name">Name</label>
-        <input type="password" class="form-control" id="name" placeholder="Name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-        <label for="tel">Telephone</label>
-        <input type="password" class="form-control" id="tel" placeholder="Name" name="name">
-         <button type="submit" class="btn w3-flat-sun-flower">Submit</button>
-        </form>
-      </div>
+        <h3 class="text-white text-center">¿Estás interesado por un terreno?</h3><br><br>
+        <p class="text-white text-center">Si deseas dar el primer paso para adquirir tu propio terreno y aventurarte en mitad de la naturaleza, déjanos tus datos y te contactaremos.</p>
+        <div class="row">
+          <div class="col-12 container jumbotron">
+            <form class="form-inline" method="POST" data-netlify="true">
+              <!-- Campo oculto obligatorio para Netlify -->
+              <input type="hidden" name="form-name" value="contacto-terreno">
+
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
+
+              <label for="tel">Telephone</label>
+              <input type="tel" class="form-control" id="tel" name="telephone" placeholder="Tu teléfono">
+
+              <button type="submit" class="btn w3-flat-sun-flower">Enviar</button>
+            </form>
+          </div>
        </div>
      </div>
      <div class="seven jumbotron jumbotron-fluid container">
@@ -548,7 +554,10 @@
               </div>
           </div>
        </div>
-       <div class="subsribe">
+
+       <!-- A continuación es otro formukario con 2 campos (nombre y correo), mientras lo tendré como comentario, ya que ya tengo un formulario arriba -->
+
+       <!-- <div class="subsribe">
          <br>
          <br>
           <h3 class="text-center">Intrested to know more?</h3>
@@ -558,12 +567,12 @@
                       <input type="text" class="form-control" placeholder="your Telephone" id="demo2" name="tel" style="width:30%">
                        <button>SUBMIT</button>
                 </div>
-       </div>
+       </div> -->
 
     <div class="footer">
-            <p>
+            <!-- <p>
               That is the example of my front-end. <br>For job suggestions write me on <i>natkayellow@gmail.com</i>
-            </p>
+            </p> -->
 
     </div>
 
