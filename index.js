@@ -7,19 +7,22 @@
     });
   });
   
-  const handleSubmit = event => {
-  event.preventDefault();
+  document.getElementById("contacto-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Evita la recarga de página
 
-  const myForm = event.target;
-  const formData = new FormData(myForm);
+  const form = event.target;
+  const data = new FormData(form);
 
   fetch("/", {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
+    body: data
   })
-    .then(() => alert("Thank you for your submission"))
-    .catch(error => alert(error));
-};
-
-document.querySelector("form").addEventListener("submit", handleSubmit);
+  .then(() => {
+    form.reset(); // Limpia el formulario
+    const mensaje = document.getElementById("mensaje-confirmacion");
+    mensaje.style.display = "block"; // Muestra el mensaje
+    // Oculta el mensaje después de 5 segundos
+    setTimeout(() => mensaje.style.display = "none", 5000);
+  })
+  .catch((error) => console.error("Error al enviar el formulario:", error));
+});
