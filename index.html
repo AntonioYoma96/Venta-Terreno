@@ -415,9 +415,7 @@
         <p class="text-white text-center">Si deseas dar el primer paso para adquirir tu propio terreno y aventurarte en mitad de la naturaleza, déjanos tus datos y te contactaremos.</p>
         <div class="row">
           <div class="col-12 container jumbotron">
-            <form id="contacto-form" name="contacto-terreno" class="form-inline" method="POST" data-netlify="true">
-              <!-- Campo oculto obligatorio para Netlify -->
-              <input type="hidden" name="form-name" value="contacto-terreno">
+            <form class="form-inline" method="POST" data-netlify="true">
 
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
@@ -430,10 +428,6 @@
 
               <button type="submit" class="btn w3-flat-sun-flower">Enviar</button>
             </form>
-            <!-- Contenedor del mensaje de confirmación -->
-            <p id="mensaje-confirmacion" style="display:none; color:#4a9375; font-weight:bold; margin-top:10px;">
-              ¡Gracias por tu mensaje! Te contactaremos pronto.
-            </p>
           </div>
        </div>
      </div>
